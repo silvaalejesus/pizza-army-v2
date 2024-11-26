@@ -1,0 +1,15 @@
+span {
+  @apply font-light;
+}
+
+.button {
+  @apply mt-5 mb-8 uppercase bg-green text-white font-display tracking-tighter rounded-2xl py-4 w-full;
+}
+
+.sla {
+  @apply flex justify-between;
+}
+
+.container {
+  @apply flex flex-col gap-3;
+}

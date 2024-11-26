@@ -1,8 +1,8 @@
 import { Router } from "express";
-import saboresRouter from "./sabores.routes";
+import pizzasRouter from "./pizza.routes";
 
 const routes = Router();
 
-routes.use("/sabores", saboresRouter);
+routes.use("/flavors", pizzasRouter);
 
 export default routes;

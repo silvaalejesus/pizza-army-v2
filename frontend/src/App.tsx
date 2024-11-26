@@ -1,8 +1,16 @@
 import "./App.css";
-import Home from "./Client/pages/Home";
+import CartProvider from "./context/CartProvider";
+import PizzaProvider from "./context/PizzaProvider";
+import Home from "./pages/Home";
 
 function App() {
-  return <Home />;
+  return (
+    <PizzaProvider>
+      <CartProvider>
+        <Home />
+      </CartProvider>
+    </PizzaProvider>
+  );
 }
 
 export default App;

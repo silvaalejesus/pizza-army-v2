@@ -1,0 +1,7 @@
+.buttons_quantity_price {
+  @apply flex pl-4 pt-6 pb-2 justify-between;
+}
+
+.buttons_quantity_price .quantity {
+  @apply flex gap-3 items-center;
+}

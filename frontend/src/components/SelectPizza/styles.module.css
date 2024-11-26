@@ -1,0 +1,119 @@
+.section_container {
+  @apply container mx-auto py-12 flex px-12;
+}
+.custom_select {
+  position: relative;
+}
+
+.custom_select select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 16px 15px 16px;
+  background-color: #ffffff;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  color: #000000;
+  cursor: pointer;
+  outline: none;
+}
+
+.custom_select select:focus {
+  background: #f2f2f2;
+  border: 1px solid #5a7ec7;
+  border-radius: 5px;
+}
+
+.custom_select::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 60%;
+  right: 8px;
+  /* transform: translate(0, -50%); */
+  width: 14px;
+  height: 14px;
+  background-color: #000000;
+  clip-path: polygon(50% 80%, 0 20%, 100% 20%);
+}
+
+li {
+  @apply flex items-center gap-2 font-light capitalize mb-4;
+}
+
+.custom_select option {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.custom_select label {
+  @apply block mb-2 text-sm font-normal text-medium-gray;
+}
+
+.custom_select select {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+}
+
+.buttons_quantity_price {
+  @apply flex pl-4 pt-6 pb-2 justify-between;
+}
+
+.buttons_quantity_price .quantity {
+  @apply flex gap-3 items-center;
+}
+
+.button_add_cart {
+  @apply bg-golden-orange rounded-[20px] py-3 w-full uppercase font-display tracking-widest font-bold mb-5;
+}
+
+.pizza {
+  position: relative;
+}
+
+.pizza::before {
+  content: "";
+  position: absolute;
+  white-space: pre;
+  top: 50%;
+  left: 90%;
+  /* transform: translate(-50%, -50%); */
+  height: 1px;
+  min-width: 50%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  &::before {
+    content: "Queijo";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #fff;
+    background-color: #333;
+    padding: 5px 10px;
+  }
+}
+.pizza::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  /* transform: translate(-50%, -50%); */
+  height: 1px;
+  width: 100px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/* .pizza::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.pizza::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+} */
