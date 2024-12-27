@@ -13,7 +13,7 @@ const Cart = () => {
         isCartOpen ? "block translate-x-0" : "hidden translate-x-full"
       } `}
     >
-      <header className="flex py-4 justify-center">
+      <header className="flex py-4 justify-center border-b-2 border-light-gray">
         <p className="uppercase font-display tracking-widest	 text-green text-xl">
           carrinho
         </p>

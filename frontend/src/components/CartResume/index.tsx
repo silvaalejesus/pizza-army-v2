@@ -16,15 +16,15 @@ export const CartResume = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.sla}>
+        <div className={styles.details}>
           <span>Produtos</span>
           <span>{formattedTotalPrice}</span>
         </div>
-        <div className={styles.sla}>
+        <div className={styles.details}>
           <span>Frete</span>
           <span>Grátis</span>
         </div>
-        <div className={styles.sla}>
+        <div className={styles.details}>
           <span className="font-bold">Total</span>
           <span className="font-bold">{formattedTotalPrice}</span>
         </div>

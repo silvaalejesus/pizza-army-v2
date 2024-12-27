@@ -29,7 +29,7 @@ const CartItem = ({ data }) => {
   });
 
   return (
-    <section className="px-4">
+    <section className="px-4 mt-8">
       <div className="flex gap-4">
         <img src={pizza} width={72} height={72} alt="" />
         <div className="w-full">

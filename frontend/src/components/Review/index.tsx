@@ -27,7 +27,7 @@ const Review = () => {
           <div className="flex w-full">
             <img className="max-w-md z-50" src={pizza_desktop} alt="pizza" />
 
-            <div className="absolute w-[67%] right-0 top-[10%]">
+            <div className="relative right-[10%] w-full">
               {properties.map((property, index) => (
                 <div className="border-b-2 border-light-gray pb-4 mt-8 ">
                   <div className="flex ml-[25%] gap-2">
@@ -43,23 +43,6 @@ const Review = () => {
 
       {/* avaliacoes dos consumidores*/}
       <div className="flex justify-between my-16 ">
-        {/* <div className="flex flex-col items-center">
-      <div className="flex">
-        <img src={stars} alt="stars" />
-        <img src={stars} alt="stars" />
-        <img src={stars} alt="stars" />
-        <img src={stars} alt="stars" />
-        <img src={stars} alt="stars" />
-      </div>
-      <p className="text-center font-light ">
-        Pizza incrível. Queijo de qualidade, bem recheada e crocante. Vou
-        pedir mais e indicar pra todo mundo, com certeza!{" "}
-      </p>
-      <div className="flex gap-1">
-        <img src={verified} />
-        <p className="font-bold">Pedro B. - consumidor verificado</p>
-      </div>
-    </div> */}
         {avaliacoes.map((avaliacao, index) => (
           <div key={index} className="flex flex-col items-center gap-3 w-[30%]">
             <div className="flex">

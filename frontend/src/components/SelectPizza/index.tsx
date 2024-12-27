@@ -14,7 +14,7 @@ const PizzaSection = () => {
     url: "flavors",
   });
 
-  const { setQuantity, cartItems, setCartItems, quantity } =
+  const { setQuantity, cartItems, setCartItems, quantity, toggleCart } =
     useContext(CartContext);
 
   const { selectedPizza, setSelectedPizza } = useContext(PizzaContext);
@@ -30,7 +30,8 @@ const PizzaSection = () => {
   };
 
   const handleAddToCart = () => {
-    handleAddCart(selectedPizza, quantity); // Passa a quantidade como argumento
+    handleAddCart(selectedPizza, quantity);
+    toggleCart();
     setQuantity(1); // Reseta a quantidade após adicionar ao carrinho
   };
 
